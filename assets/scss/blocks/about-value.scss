@@ -1,0 +1,66 @@
+@import "../vars";
+@import "../functions";
+
+.p-about1__value {
+	position: initial;
+	&__box1 {
+		margin-bottom: 40px;
+		padding: 0 15px;
+		@include respond-to(767) {margin-bottom: 24px;}
+		.art1 {
+			position: relative;
+			max-width: 1170px;
+			min-height: 96px;
+			margin: 0 auto;
+			padding: 24px 20px;
+			background-color: rgba(89, 158, 67, 1);
+			border-bottom-left-radius: 12px;
+			border-bottom-right-radius: 12px;
+			text-align: center;
+			color: white;
+			z-index: 1;
+			@include respond-to(767) {
+				max-width: 600px;
+				padding: 14px 20px;
+				min-height: auto;
+			}
+			&_title1 {text-transform: uppercase;}
+			// .c-quote1{color: $white;}
+		}
+	}
+	&__box2 {
+		z-index: initial;
+		.row1 {
+			.card1 {
+				// padding-bottom: 24px;
+				z-index: initial;
+				// border-bottom: 1px solid $black;
+				&_icon1 {
+					display: block;
+					width: auto;
+					// max-width: 40px;
+					width: auto;
+					height: auto;
+					margin-bottom: 6px;
+				}
+				&_title1 {margin-bottom: 8px;}
+			}
+			[class*=col-] {
+				&>.card1 {
+					margin-bottom: 24px;
+					&:not(:last-child){
+						padding-bottom: 24px;
+						border-bottom: 1px solid $black;
+						@include respond-to(575){padding-bottom: 15px;}
+					}
+					&:last-child {
+						@include respond-to(575){
+							padding-bottom: 15px;
+							border-bottom: 1px solid $black;
+						}
+					}
+				}
+			}
+		}
+	}
+}

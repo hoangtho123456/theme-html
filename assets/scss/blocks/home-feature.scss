@@ -1,0 +1,60 @@
+@import "../vars";
+@import "../functions";
+
+//will change to mobie first and optimize later
+.p-home1__feature {
+  position: initial;
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .title1 {
+    position: relative;
+    padding-bottom: 36px;
+    margin-bottom: 36px;
+    @include respond-to(767) {
+			padding-bottom: 20px;
+      margin-bottom: 20px;
+		}
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 80px;
+      height: 2px;
+      background-color: $green;
+      margin: auto;
+    }
+  }
+  .item1 {
+    z-index: initial;
+    .c-title1 {
+      margin-bottom: 4px;
+      // color: black;
+    }
+    &_icon1 {
+      display: block;
+      width: auto;
+      max-width: 40px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+  }
+  .row1 {
+    position: initial;
+    .item1 {max-width: 558px;}
+    [class*=col-] {
+      &:not(:last-child) {
+        @include respond-to(767) {margin-bottom: 24px;}
+      }
+      .item1 {
+        &:not(:last-child) {
+          margin-bottom: 40px;
+          @include respond-to(767) {margin-bottom: 24px;}
+        }
+      }
+    }
+  }
+}
+

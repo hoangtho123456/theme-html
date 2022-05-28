@@ -1,0 +1,7 @@
+//----------------
+create block
+1.take photo block indesign and add it to folder [block-thumbs]
+1. create folder block in source
+3. add block acf by code(add code create block in file acf-register-block)
+4. create file scss use for compile to file css for that block
+//remember to turn off gulp before create file scss

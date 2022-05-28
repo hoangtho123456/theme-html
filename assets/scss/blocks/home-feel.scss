@@ -1,0 +1,14 @@
+@import "../vars";
+@import "../functions";
+
+//will optimize later
+.p-home1__feel {
+	padding-bottom: 68px;
+	background-color: $gray-4;
+	@include respond-to(767) {padding-bottom: 40px;}
+	.mb1 {
+    margin-bottom: 40px;
+    @include respond-to(767) {margin-bottom: 20px;}
+  }
+}
+

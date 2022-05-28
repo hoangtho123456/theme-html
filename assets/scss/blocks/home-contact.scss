@@ -1,0 +1,71 @@
+@import "../vars";
+@import "../functions";
+
+.p-home1__contact {
+	position: relative;
+	padding: 100px 20px;
+	@include respond-to(767) {
+		padding: 50px 20px 176px;
+	}
+	.title1 {
+		@include respond-to(767) {margin-bottom: 10px;}
+		span{color:$green;}
+	}
+	.art1 {
+		color: $gray-1;
+		font-size: 32px;
+		@include respond-to(767) {font-size: 18px;}
+	}
+	.bg1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 840px;
+		height: auto;
+		// object-fit: contain;
+		vertical-align: top;
+		z-index: 1;
+		@media screen and (min-width:1200px) and (max-width:1300px) {width: 650px;}
+		@media screen and (min-width:992px) and (max-width:1199px){
+			width: 503px;
+		}
+		@media screen and (min-width:768px) and (max-width:991px){
+			width: 403px;
+		}
+		@include respond-to(767) {
+			width: 340px;
+		}
+	}
+	.box1 {
+		position: initial;
+		&>.container {
+			background-color: $white;
+			border-radius: 8px;
+			padding: 80px 101px 45px 138px;
+			@media screen and (min-width:768px) and (max-width:991px){
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			@include respond-to(767) {
+				padding: 40px 20px 40px;
+			}
+		}
+		&_row1 {
+			position: initial;
+			&>[class*="col"]:not(:last-child) {
+				margin-bottom: 25px;
+			}
+			&_box1 {
+				max-width: 476px;
+			}
+			&_box2 {
+				max-width: 384px;
+				margin-left: auto;
+				@include respond-to(767) {
+					max-width: initial;
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}

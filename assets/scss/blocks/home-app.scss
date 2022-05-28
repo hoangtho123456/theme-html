@@ -1,0 +1,108 @@
+@import "../vars";
+@import "../functions";
+
+.p-home1__app {
+	position: relative;
+	background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+	&:before{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to left, #000, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0));
+		opacity: 0.6;
+	}
+	
+  .text-white{color: white;}
+  .art1 {
+		position: relative;
+    max-width: 690px;
+    padding: 64px 32px;
+    background-color: rgba(89, 158, 67, 0.8);
+		border-radius: 12px;
+		text-align: center;
+		color: white;
+		z-index: 1;
+		@include respond-to(767) {
+			max-width: 450px;
+			padding: 30px 20px;
+		}
+    &:after {
+			content: '';
+			position: absolute;
+			right: -24px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border-top: 20px solid transparent;
+			border-bottom: 20px solid transparent;
+			border-left: 24px solid rgba(89, 158, 67, 0.8);
+			@include respond-to(767) {
+				right: 0;
+				left: 0;
+				top: unset;
+				bottom: -18px;
+				// bottom: 0;
+				margin: auto;
+				border: none;
+				border-left: 15px solid transparent;
+				border-right: 15px solid transparent;
+				border-top: 20px solid rgba(89, 158, 67, 0.8);
+			}
+    }
+		.c-quote1{color: $white;}
+  }
+	.bg1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 363px;
+		height: auto;
+		// object-fit: contain;
+		// vertical-align: top;
+		@media screen and (min-width:992px) and (max-width:1199px){
+			width: 303px;
+		}
+		@media screen and (min-width:768px) and (max-width:991px){
+			width: 250px;
+		}
+		@include respond-to(767) {
+			position: relative;
+			z-index: 1;
+			display: block;
+			width: 240px;
+			margin-left: auto;
+		}
+	}
+	.box1 {
+		padding: 132px 0;
+		@include respond-to(767) {
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding: 40px 15px;
+		}
+		.art1 {
+			margin: 0 auto;
+			@include respond-toSP(1367) {right: 50px;}
+			@media screen and (min-width:1200px) and (max-width:1366px){
+				right: 90px;
+			}
+			@media screen and (min-width:992px) and (max-width:1199px){
+				right: 120px;
+			}
+			@media screen and (min-width:768px) and (max-width:991px){
+				right: 116px;
+				max-width: 490px;
+				padding: 34px 22px;
+			}
+		}
+	}
+}
+

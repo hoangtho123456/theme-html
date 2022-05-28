@@ -1,0 +1,45 @@
+@import "../vars";
+@import "../functions";
+
+.p-store1 {
+	position: initial;
+	.btn1 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 104px;
+		// line-height: 91px;
+		padding: 10px 20px;
+		color: $black;
+		font-weight: bold;
+		font-size: 24px;
+		text-align: center;
+		border-radius: 6px;
+		background: url(../../images/bg/bg-btn.jpg) no-repeat top left;
+		background-size: cover;
+		@include respond-to(767) {
+			height: auto;
+			min-height: 80px;
+		}
+		&:hover {
+			color: $white;
+			box-shadow: 0 14px 40px -19px rgba(0, 0, 0, 0.32);
+		}
+	}
+	.btns1 {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 100px;
+		@include respond-to(767) {
+			display: block;
+			margin-top: 40px;
+		}
+		.btn1 {
+			width: 48%;
+			@include respond-to(767) {width: 100%;}
+			&:last-child{
+				@include respond-to(767) {margin-top: 20px;}
+			}
+		}
+	}
+}

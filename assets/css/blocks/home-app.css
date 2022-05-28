@@ -1,0 +1,146 @@
+.p-home1__app {
+  position: relative;
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p-home1__app:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, from(#000), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(right, #000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: linear-gradient(to left, #000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  opacity: 0.6;
+}
+
+.p-home1__app .text-white {
+  color: white;
+}
+
+.p-home1__app .art1 {
+  position: relative;
+  max-width: 690px;
+  padding: 64px 32px;
+  background-color: rgba(89, 158, 67, 0.8);
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-home1__app .art1 {
+    max-width: 450px;
+    padding: 30px 20px;
+  }
+}
+
+.p-home1__app .art1:after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 24px solid rgba(89, 158, 67, 0.8);
+}
+
+@media only screen and (max-width: 767px) {
+  .p-home1__app .art1:after {
+    right: 0;
+    left: 0;
+    top: unset;
+    bottom: -18px;
+    margin: auto;
+    border: none;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid rgba(89, 158, 67, 0.8);
+  }
+}
+
+.p-home1__app .art1 .c-quote1 {
+  color: #fff;
+}
+
+.p-home1__app .bg1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 363px;
+  height: auto;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .p-home1__app .bg1 {
+    width: 303px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .p-home1__app .bg1 {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .p-home1__app .bg1 {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 240px;
+    margin-left: auto;
+  }
+}
+
+.p-home1__app .box1 {
+  padding: 132px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-home1__app .box1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding: 40px 15px;
+  }
+}
+
+.p-home1__app .box1 .art1 {
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1367px) {
+  .p-home1__app .box1 .art1 {
+    right: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  .p-home1__app .box1 .art1 {
+    right: 90px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .p-home1__app .box1 .art1 {
+    right: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .p-home1__app .box1 .art1 {
+    right: 116px;
+    max-width: 490px;
+    padding: 34px 22px;
+  }
+}

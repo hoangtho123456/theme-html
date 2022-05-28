@@ -1,0 +1,82 @@
+.p-about1__value {
+  position: initial;
+}
+
+.p-about1__value__box1 {
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__value__box1 {
+    margin-bottom: 24px;
+  }
+}
+
+.p-about1__value__box1 .art1 {
+  position: relative;
+  max-width: 1170px;
+  min-height: 96px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  background-color: #599e43;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__value__box1 .art1 {
+    max-width: 600px;
+    padding: 14px 20px;
+    min-height: auto;
+  }
+}
+
+.p-about1__value__box1 .art1_title1 {
+  text-transform: uppercase;
+}
+
+.p-about1__value__box2 {
+  z-index: initial;
+}
+
+.p-about1__value__box2 .row1 .card1 {
+  z-index: initial;
+}
+
+.p-about1__value__box2 .row1 .card1_icon1 {
+  display: block;
+  width: auto;
+  width: auto;
+  height: auto;
+  margin-bottom: 6px;
+}
+
+.p-about1__value__box2 .row1 .card1_title1 {
+  margin-bottom: 8px;
+}
+
+.p-about1__value__box2 .row1 [class*=col-] > .card1 {
+  margin-bottom: 24px;
+}
+
+.p-about1__value__box2 .row1 [class*=col-] > .card1:not(:last-child) {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #000;
+}
+
+@media only screen and (max-width: 575px) {
+  .p-about1__value__box2 .row1 [class*=col-] > .card1:not(:last-child) {
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .p-about1__value__box2 .row1 [class*=col-] > .card1:last-child {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+  }
+}

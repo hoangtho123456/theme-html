@@ -1,0 +1,136 @@
+.p-about1__partner {
+  background-color: #F8F8F8;
+}
+
+.p-about1__partner .mb1 {
+  margin-bottom: 64px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__partner .mb1 {
+    margin-bottom: 24px;
+  }
+}
+
+.p-about1__partner .btns1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-about1__partner .btns1_btn1 {
+  display: block;
+  width: 50%;
+  text-align: center;
+  height: 40px;
+  padding: 4px 10px;
+  color: #555;
+  border: none;
+  border-bottom: 2px solid #BCBCBC;
+  background-color: unset;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__partner .btns1_btn1 {
+    height: auto;
+  }
+}
+
+.p-about1__partner .btns1_btn1.active, .p-about1__partner .btns1_btn1:hover {
+  color: #599e43;
+  border-color: #245F12;
+}
+
+.p-about1__partner .splide1 {
+  background-color: initial;
+}
+
+.p-about1__partner .splide1 .splide__track {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.p-about1__partner .splide1 .card1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 220px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid #E5E5E5;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__partner .splide1 .card1 {
+    height: 150px;
+  }
+}
+
+.p-about1__partner .splide1 .card1_img1 {
+  position: initial;
+}
+
+.p-about1__partner .splide1 .card1_img1 img {
+  width: auto;
+  max-width: 190px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__partner .splide1 .card1_img1 img {
+    max-width: 100%;
+  }
+}
+
+.p-about1__partner .splide1 .card1--hover:hover {
+  border-color: #245F12;
+  opacity: 0.9;
+}
+
+.p-about1__partner .tab1 {
+  position: initial;
+}
+
+.p-about1__partner .tab1_box1 {
+  max-width: 640px;
+  margin: 0 auto 40px;
+}
+
+.p-about1__partner .tab1_tabs1 {
+  position: initial;
+}
+
+.p-about1__partner .tab1_tabs1_tab1 {
+  width: initial;
+}
+
+.p-about1__partner .tab1_tabs1_tab1.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 15px;
+  left: 15px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.p-about1__partner .tab1_tabs1_tab1.active {
+  position: relative;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}

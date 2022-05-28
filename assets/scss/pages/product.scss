@@ -1,0 +1,48 @@
+@import "../vars";
+@import "../functions";
+
+.p-product1 {
+	position: initial;
+	&__box1 {
+		background-size: cover;
+		background-repeat: no-repeat;
+		&>.container {
+			padding-top: 92px;
+			padding-bottom: 92px;
+			@include respond-to(767) {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
+		}
+	}
+}
+
+.p-product2 {
+	padding-top: 100px;
+	padding-bottom: 30px;
+	@include respond-to(767) {
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	&__row1 {
+		@include respond-toSP(768) {
+			margin: 0 -12px;
+		}
+		[class*=col-] {
+			margin-bottom: 30px;
+			@include respond-toSP(768) {margin-bottom: 70px;}
+			@include respond-toSP(768) {padding: 0 12px;}
+		}
+	}
+	&__box1 {
+		position: initial;
+		.container {
+			@media screen and (min-width:992px) and (max-width:1199px){
+				max-width: 1150px;
+			}
+			@media screen and (min-width:768px) and (max-width:991px){
+				max-width: 800px;
+			}
+		}
+	}
+}

@@ -1,0 +1,81 @@
+@import "../vars";
+@import "../functions";
+
+// .p-list1 {
+//   position: initial;
+//   // padding-bottom: 40px;
+//   // border-bottom: 1px solid $green;
+//   // @include respond-to(767) {padding-bottom: 30px;}
+//   // @include respond-toSP(1200) {
+//   // 	margin-left: -12px;
+//   // 	margin-right: -12px;
+//   // }
+//   // &_title1 {color: $white;}
+//   // &>[class*=col-]{
+//   // 	margin-bottom: 40px;
+//   // 	@include respond-to(767) {margin-bottom: 20px;}
+//   // 	// @include respond-toSP(1200) {
+//   // 	// 	padding-left: 12px;
+//   // 	// 	padding-right: 12px;
+//   // 	// }
+//   // }
+//   &>.card1:not(:last-child) {
+//     margin-bottom: 40px;
+//     padding-bottom: 40px;
+//     border-bottom: 1px solid $gray;
+//     @include respond-to(767) {margin-bottom: 20px;}
+//   }
+//   .card1 {
+//     display: flex;
+//     // cursor: pointer;
+//     // flex-wrap: wrap;
+//     // &:hover {
+//     //   .c-title1 {color: $green;}
+//     // }
+//     .c-date1{margin-bottom: 4px;}
+//     .c-title1 {
+//       margin-bottom: 7px;
+//       transition: all ease 0.2s;
+//     }
+//     &_img1 {
+//       overflow: hidden;
+//       border-radius: 6px;
+//       // &:after {
+//       // 	content: '';
+//       // 	position: absolute;
+//       // 	left: 0;
+//       // 	top: 0;
+//       // 	z-index: 1;
+//       // 	width: 100%;
+//       // 	height: 100%;
+//       // 	background-color: rgba(196, 196, 196, 0.2);
+//       // }
+//     }
+//     &_text1 {margin-bottom: 16px;}
+//     &_col1 {
+//       width: 384px;
+//       flex: 1;
+//       margin-right: 25px;
+//       @include respond-to(767) {
+//         width: 250px;
+//         margin-right: 15px;
+//       }
+//       @include respond-to(575) {width: 170px;}
+//     }
+//     &_col2{
+//       width: calc(100% - 384px);
+//       @include respond-to(767) {
+//         width: calc(100% - 250px);
+//       }
+//       @include respond-to(575) {width: calc(100% - 170px);}
+//     }
+//   }
+// }
+
+.p-recruit1 {
+  position: initial;
+  .p-list1 {
+    max-width: 996px;
+    margin: 0 auto;
+  }
+}

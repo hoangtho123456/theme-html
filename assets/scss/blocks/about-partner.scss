@@ -1,0 +1,100 @@
+@import "../vars";
+@import "../functions";
+
+//will optimize later
+.p-about1__partner {
+	background-color: $gray-4;
+	.mb1 {
+		margin-bottom: 64px;
+		@include respond-to(767) {margin-bottom: 24px;}
+	}
+	.btns1 {
+		display: flex;
+		flex-wrap: wrap;
+		&_btn1 {
+			display: block;
+			width: 50%;
+			text-align: center;
+			height: 40px;
+			padding: 4px 10px;
+			color: $gray-2;
+			border: none;
+			border-bottom: 2px solid $gray-3;
+			background-color: unset;
+			@include respond-to(767) {height: auto;}
+			&.active,
+			&:hover {
+				color: $green;
+				border-color: $green-1;
+			}
+		}
+	}
+	.splide1 {
+		background-color: initial;
+		.splide__track{
+			max-width: 1024px;
+	    margin: 0 auto;
+		}
+		.card1 {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// width: 220px;
+			width: 100%;
+			height: 220px;
+			padding: 10px 20px;
+			border-radius: 6px;
+			border: 1px solid $gray;
+			@include respond-to(767) {height: 150px;}
+			&_img1 {
+				position: initial;
+				img {
+					width: auto;
+					max-width: 190px;
+					height: auto;
+					object-fit: contain;
+					max-width: 100%;
+					@include respond-to(767) {max-width: 100%;}
+				}
+			}
+			&--hover {
+				// display: block;
+				&:hover{
+					border-color: $green-1;
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+	.tab1 {
+		position: initial;
+		&_box1 {
+			max-width: 640px;
+			margin: 0 auto 40px;
+		}
+		&_tabs1 {
+			position: initial;
+			// &_tab1 {display: none;}
+			&_tab1 {
+				width: initial;
+				&.hidden {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 15px;
+					left: 15px;
+					z-index: -1;
+					opacity: 0;
+				}
+				&.active {
+					position: relative;
+					right: 0;
+					left: 0;
+					z-index: 1;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

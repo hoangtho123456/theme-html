@@ -1,0 +1,181 @@
+@import "../vars";
+@import "../functions";
+
+//will change to mobie first and optimize later
+.p-home1__process {
+	padding-top: 100px;
+	@include respond-to(767) {padding-top: 50px;}
+	.mb1 {margin-bottom: 13px;}
+	.bold {
+		font-weight: bold;
+	}
+	.texts1 {
+		p{margin-bottom: 0;}
+	}
+	.art1 {
+		position: initial;
+		h1 {
+			@include respond-toSP(1200) {
+				max-width: 810px;
+				margin: 0 auto 40px;
+			}
+		}
+	}
+	.video-box1 {
+		width: 996px;
+		@media screen and (min-width:768px) and (max-width:991px){
+			width: 700px;
+		}
+		@media screen and (min-width:576px) and (max-width:767px){
+			width: 550px;
+		}
+		@media screen and (min-width:376px) and (max-width:575px){
+			width: 350px;
+		}
+		@include respond-to(375) {
+			width: 300px;
+		}
+		video {
+			width: 100%;
+			height: 560px;
+			border-radius: 10px;
+			box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.3);
+			object-fit: cover;
+			@media screen and (min-width:768px) and (max-width:991px){
+				height: 400px;
+			}
+			@media screen and (min-width:576px) and (max-width:767px){
+				height: 360px;
+			}
+			@media screen and (min-width:376px) and (max-width:575px){
+				height: 250px;
+			}
+			@include respond-to(375) {height: 220px;}
+		}
+	}
+	.number1 {
+		font-weight: 800;
+		color: $white;
+		h1 {
+			font-size: 80px;
+			// @include respond-to(767) {font-size: 30px;}
+		}
+		&_box1 {
+			width: 131px;
+			@include respond-to(767) {
+				width: auto;
+				padding-bottom: 15px;
+				text-align: center;
+			}
+			h1,h2,h3,h4,h5,h6{color: white;}
+		}
+	}
+	.list1 {
+		position: initial;
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (min-width:768px) and (max-width:991px){
+			flex:1;
+		}
+		.card1 {
+			width: 190px;
+    	padding: 0 18px;
+			color: $white;
+			text-align: center;
+			@media screen and (min-width:992px) and (max-width:1199px){
+				width: 156px;
+				padding: 0 15px;
+			}
+			@media screen and (min-width:768px) and (max-width:991px){
+				// width: 124px;
+				width: 20%;
+    		padding: 0 14px;
+			}
+			@include respond-to(767) {
+				margin-bottom: 25px;
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			@media screen and (min-width:576px) and (max-width:767px){
+				width: 33.333333%;
+			}
+			@include respond-to(575) {width: 50%;}
+			&>* {
+				@include respond-to(575) {
+					max-width: 150px;
+					margin: 0 auto;
+				}
+			}
+			h1,h2,h3,h4,h5,h6{color: white;}
+			&_img1 {
+				z-index: initial;
+				img {
+					width: auto;
+					height: auto;
+				}
+			}
+			&--mb1 {
+				margin-bottom: 32px;
+				@include respond-to(767) {margin-bottom: 10px;}
+			}
+		}
+	}
+	.container-cus1 {
+		@media screen and (min-width:768px) and (max-width:991px){
+			max-width: 900px;
+		}
+	}
+	.box1 {
+		max-width: 996px;
+		margin: 0 auto 80px;
+		@include respond-to(767) {margin-bottom: 40px;}
+	}
+	.box2 {
+		padding-bottom: 90px;
+		background-color: $green;
+		@include respond-to(767) {padding-bottom: 30px;}
+		&_child1 {
+			position: relative;
+			z-index: initial;
+			margin-bottom: 40px;
+			@include respond-to(767) {margin-bottom: 30px;}
+			.video-box1 {
+				position: relative;
+				z-index: 1;
+				margin: 0 auto;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 50%;
+				background-color: white;
+				z-index: 0;
+			}
+		}
+		&_child2 {
+			display: flex;
+			flex-wrap: wrap;
+			.number1 {
+				width: 180px;
+				border-right: 2px solid $white;
+				@media screen and (min-width:992px) and (max-width:1199px){
+					width: 160px;
+				}
+				@media screen and (min-width:768px) and (max-width:991px){
+					width: 150px;
+				}
+				@include respond-to(767) {
+					width: 100%;
+					margin-bottom: 20px;
+					border-right: none;
+					border-bottom: 2px solid $white;
+				}
+				h1{line-height: 84px;}
+			}
+		}
+	}
+}
+

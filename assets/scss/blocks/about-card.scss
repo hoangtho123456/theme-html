@@ -1,0 +1,46 @@
+@import "../vars";
+@import "../functions";
+
+.p-about1__card {
+	position: initial;
+	.mb1 {
+		margin-bottom: 40px;
+		@include respond-to(767){margin-bottom: 22px;}
+	}
+	.gray1{color: $gray-2;}
+	.box1 {
+		display: flex;
+		flex-wrap: wrap;
+		&_info1 {
+			max-width: 485px;
+		}
+		&_col1 {
+			width: 50%;
+			@include respond-to(575){width: 100%;}
+		}
+		&_child1 {
+			display: flex;
+			align-items: center;
+			padding: 100px 20px 100px 115px;
+			@media screen and (min-width:768px) and (max-width:1199px){padding-left: 40px;}
+			@include respond-to(767){padding: 20px 20px 20px;}
+		}
+		&--type1 {
+			flex-direction: row-reverse;
+			.box1_info1 {
+				@include respond-toSP(768){
+					margin-left: auto;
+					text-align: right;
+				}
+			}
+			.box1_child1 {
+				@include respond-toSP(768){
+					padding: 100px 115px 100px 20px;
+				}
+				@include respond-toSP(1200){
+					padding-right: 40px;
+				}
+			}
+		}
+	}
+}

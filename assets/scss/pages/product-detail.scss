@@ -1,0 +1,509 @@
+@import "../vars";
+@import "../functions";
+/*product detail*/
+
+.c-status1 {
+	position: relative;
+	height: 28px;
+	padding: 5px 14px 5px 33px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 14px;
+	// border-top-right-radius: 15px;
+	// border-bottom-right-radius: 15px;
+	// border-top-left-radius: 15px;
+	// border-bottom-left-radius: 0;
+	border-radius: 15px 15px 15px 0;
+	background: #599e43;
+	&__icon1 {
+		position: absolute;
+		left: -6px;
+		top: -4px;
+		width: 33px;
+		height: 40px;
+	}
+	&--hot {background-color: $yellow;}
+	&--love {background-color: $red;}
+	&--discount {background-color: $green-1;}
+}
+
+.c-sidebar1 {
+	position: initial;
+	border-radius: 6px;
+	overflow: hidden;
+	background-color: $gray-4;
+	color: $gray-2;
+	&__title1 {color: $white;}
+	&__text1 {
+		position: initial;
+		span {display: inline-block;}
+	}
+	&__card1 {
+		padding-bottom: 24px;
+		@include respond-to(767){padding-bottom: 15px;}
+		border-bottom: 1px dashed $gray-3;
+	}
+	&__list1 {
+		position: initial;
+		.c-sidebar1__card1 {
+			padding-top: 24px;
+			@include respond-to(767){padding-top: 15px;}
+			&:first-child {padding-top: 0;}
+			&:last-child {
+				padding-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+	&__box1 {
+		padding: 14px 40px 14px;
+		@include respond-to(767){padding: 12px 15px 12px;}
+		background-color: $green;
+	}
+	&__box2 {
+		padding: 40px 40px 40px;
+		@include respond-to(991){padding: 36px 20px 36px;}
+		@include respond-to(767){padding: 20px 15px 25px;}
+		// background-color: $green;
+	}
+}
+
+
+.p-prdetail1 {
+	position: initial;
+	&__box1 {
+		margin-bottom: 61px;
+		padding-top: 68px;
+		@include respond-to(767) {
+			margin-bottom: 25px;
+			padding-top: 40px;
+		}
+		&>.container {
+			position: relative;
+			padding-bottom: 61px;
+			@include respond-to(767) {padding-bottom: 25px;}
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: 0 auto;
+				width: 100%;
+				height: 1px;
+				max-width: 1170px;
+				background-color: $gray-3;
+			}
+		}
+		.mb1 {
+			margin-bottom: 16px;
+			@include respond-to(767) {margin-bottom: 8px;}
+		}
+		.mb2 {
+			margin-bottom: 38px;
+			@include respond-to(767){margin-bottom: 16px;}
+		}
+		.mb3 {margin-bottom: 8px;}
+		.mb4 {
+			margin-bottom: 30px;
+			@include respond-to(767) {margin-bottom: 20px;}
+		}
+		.gray1{color: $gray-2;}
+		.spec-title1 {
+			position: initial;
+			span {
+				color: black;
+				font-size: 20px;
+			}
+		}
+		.spec-title2 {
+			position: relative;
+			display: inline-block;
+			color: $gray-3;
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 12px;
+				width: 100%;
+				height: 1px;
+				background-color: $gray-3;
+			}
+		}
+		.item1 {
+			position: relative;
+			.c-status1 {
+				position: absolute;
+				left: 14px;
+				top: 0;
+				z-index: 2;
+			}
+			&_icon1 {
+				position: absolute;
+				// width: auto;
+				height: auto;
+				object-fit: contain;
+				right: 10px;
+				bottom: 10px;
+				z-index: 1;
+			}
+			&_zoom1 {
+				cursor: zoom-in;
+				border-radius: 6px;
+				border: 1px solid $gray;
+			}
+		}
+		.ul1 {
+			list-style: none;
+			li{
+				display: inline-block;
+				width: 50px;
+				height: 40px;
+				margin-right: 12px;
+				line-height: 0;
+				// border-radius: 6px;
+				// border: 1px solid $gray;
+				overflow: hidden;
+				&:hover,&.active {
+					img{border-color: $green;}
+				}
+			}
+			img {
+				width: 100%;
+				// height: 40px;
+				height: 100%;
+				object-fit: cover;
+				vertical-align: top;
+				border-radius: 6px;
+				border: 1px solid $gray;
+			}
+		}
+		.splide1 {
+			.splide__slide {
+				padding-top: 30px;
+				@include respond-to(767){padding-top: 20px;}
+			}
+			.is-active {
+				.splide1_sm1 {border-color: $green;}
+			}
+			&_sm1 {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+				// border: 1px solid $green;
+				border: 1px solid $gray;
+			}
+			&_card1 {
+				width: 100%;
+				height: 100%;
+			}
+			&--thumb1 {
+				.splide__slide {padding-top: 0;}
+			}
+		}
+		.tabs1 {
+			position: relative;
+			&_tab1 {
+				&.hidden {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 15px;
+					left: 15px;
+					z-index: -1;
+					opacity: 0;
+				}
+				&.active {
+					position: relative;
+					right: 0;
+					left: 0;
+					z-index: 1;
+					opacity: 1;
+				}
+			}
+		}
+		.row1 {
+			&_img1 {
+				border-radius: 8px;
+				overflow: hidden;
+				// img {
+				// 	width: 100%;
+				// 	height: auto;
+				// 	vertical-align: top;
+				// }
+			}
+			&_box1 {
+				max-width: 588px;
+			}
+			&_box2 {
+				max-width: 486px;
+				margin-left: auto;
+				padding-top: 30px;
+				@include respond-to(767) {
+					margin-left: initial;
+				}
+				// .c-texts2 {color: $gray-2;}
+			}
+		}
+	}
+}
+
+.p-prdetail2 {
+	position: initial;
+	&__box1 {
+		margin-bottom: 40px;
+		@include respond-to(767){margin-bottom: 36px;}
+		.mb1{
+			margin-bottom: 62px;
+			@include respond-to(767){margin-bottom: 30px;}
+		}
+		// .mb2{
+		// 	margin-bottom: 40px;
+		// 	@include respond-to(767){margin-bottom: 20px;}
+		// }
+		.btn1 {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 16px 24px;
+			color: $white;
+			border-radius: 6px;
+			// overflow: hidden;
+			background-color: $green;
+			transition: all ease 0.1s;
+			cursor: pointer;
+			@include respond-to(767){padding: 13px 12px;}
+			&.active {
+				border-bottom-left-radius: 0;
+				border-bottom-right-radius: 0;
+				.off1 {display: block;}
+				.on1 {display: none;}
+			}
+			.off1 {display: none;}
+			.on1 {display: block;}
+
+			&_add1 {
+				z-index: initial;
+				img{
+					width: 15px;
+					height: 15px;
+					vertical-align: middle;
+				}
+			}
+			&_minus1 {
+				display: inline-block;
+				width: 16px;
+				height: 1.5px;
+				border-radius: 20px;
+				vertical-align: middle;
+				background-color: $green-1;
+			}
+			&_status1 {
+				position: relative;
+				font-size: 14px;
+				text-align: right;
+				// max-width: 82px;
+				// .btn1_minus1 {
+				// 	// position: absolute;
+				// 	// top: 9px;
+				// 	// right: 0;
+				// }
+				// .btn1_add1 {
+				// 	// position: absolute;
+				// 	// top: 0;
+				// 	// right: -3px;
+				// }
+				.span1{
+					margin-right: 6px;
+					@include respond-to(767){display: none;}
+				}
+			}
+			&_title1 {
+				flex: 1;
+				color: $white;
+			}
+			// &_box1 {position: initial;}
+		}
+		.content1 {
+			color: $gray-2;
+			padding-top: 32px;
+			@include respond-to(767){padding-top: 20px;}
+			// b,strong {color: $black;}
+			img {
+				border-radius: 6px;
+				vertical-align: top;
+			}
+			p{margin-bottom: 12px;}
+			// &>p:last-child{margin-bottom: 0;}
+			&>*:last-child{
+				margin-bottom: 0;
+				&>*{margin-bottom: 0;}
+			}
+			b,strong{color: $black;}
+			ul {
+				list-style: none;
+				padding-left: 15px;
+				li{
+					position: relative;
+					padding-left: 12px;
+    			margin-bottom: 10px;
+					&:before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 12px;
+						width: 4px;
+						height: 4px;
+						background-color: #555;
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+		.row1 {
+			z-index: initial;
+			[class*=col-]:not(:last-child) {
+				@include respond-to(767){margin-bottom: 30px;}
+			}
+		}
+	}
+	&__box2 {
+		position: initial;
+		// .item1 {
+		// 	padding: 14px 15px;
+		// 	background-color: $green;
+		// 	border-top-left-radius: 6px;
+		// 	border-top-right-radius: 6px;
+		// 	color: $white;
+		// }
+		.table1 {
+			width:  100%;
+			// height:  auto;
+			border-spacing: 0;
+			// border-bottom: 1px solid #d4d4d4;
+			border-collapse: collapse;
+			text-align: left;
+			color: $gray-2;
+			.fa-star{
+				color: $yellow-2;
+				font-size: 14px;
+			}
+			a {
+				color: $green;
+				display: inline-block;
+				&:hover{text-decoration: underline;}
+			}
+			.p1 {font-size: 14px;}
+			ul {
+				list-style: none;
+				padding-left: 15px;
+				@include respond-to(767) {padding-left: 5px;}
+				li{
+					position: relative;
+					padding-left: 12px;
+					@include respond-to(767) {padding-left: 8px;}
+					&:before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 8px;
+						width: 4px;
+						height: 4px;
+						background-color: #555;
+						border-radius: 50%;
+					}
+					&:not(:last-child){margin-bottom: 10px;}
+				}
+			}
+			tr {
+				width: 100%;
+				vertical-align: text-top;
+				border-right: 1px solid $gray-3;
+				border-bottom: 1px solid $gray-3;
+				background-color: rgba(248, 248, 248, 1);
+				word-break: break-word;
+				&:first-child {
+					padding: 14px 15px;
+					background-color: $green;
+					color: $white;
+					@include respond-toSP(576) {text-align: center;}
+				}
+				&:nth-child(2) {
+					background: url(../../images/bg/bg-table.jpg) no-repeat left top;
+					background-size: cover;
+					color: $black;
+				}
+				&:not(:nth-child(1)):not(:nth-child(2)):nth-child(even) {background-color: $gray;}
+				&>th,td {
+					&:nth-child(1) {
+						width: 15%;
+					}
+					&:nth-child(2) {
+						width: 17%;
+					}
+					&:nth-child(3) {
+						width: 17%;
+					}
+					&:nth-child(4) {
+						width: 17%;
+					}
+					&:nth-child(5) {
+						width: 22%;
+					}
+				}
+				&>th {
+					padding: 13px 15px 13px;
+					font-size: 20px;
+					font-weight: bold;
+					border-left: 1px solid $gray-3;
+				}
+				&>td {
+					padding: 24px 14px 24px;
+					border-left: 1px solid $gray-3;
+					@include respond-to(767) {padding: 14px 10px 14px;}
+					&:first-child {
+						color: $black;
+						font-weight: bold;
+					}
+					p {
+						margin-bottom: 10px;
+						&:last-child{margin-bottom: 0;}
+					}
+				}
+			}
+		}
+		.table-box1 {
+			overflow: hidden;
+			border-top-left-radius: 6px;
+			border-top-right-radius: 6px;
+			@include respond-to(767) {overflow-x: auto;}
+			.table1 {
+				@include respond-to(767) {width: 900px;}
+			}
+		}
+	}
+}
+
+.p-prdetail3 {
+	position: initial;
+	padding-bottom: 65px;
+	@include respond-to(767){padding-bottom: 35px;}
+	&__box1 {
+		position: initial;
+		.mb1{
+			margin-bottom: 22px;
+			@include respond-to(767){margin-bottom: 16px;}
+		}
+		.row1 {
+			position: initial;
+			[class*=col-] {
+				margin-bottom: 30px;
+				@include respond-toSP(768) {margin-bottom: 70px;}
+				@include respond-toSP(768) {padding: 0 12px;}
+				@include respond-to(767){margin-bottom: 30px;}
+			}
+		}
+	}
+}
+

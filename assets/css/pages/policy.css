@@ -1,0 +1,139 @@
+.p-policy1 {
+  position: initial;
+}
+
+.p-policy1__box1 {
+  position: initial;
+}
+
+.p-policy1__box1 .table1 {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.p-policy1__box1 .table1 p {
+  margin-bottom: 15px;
+}
+
+.p-policy1__box1 .table1 a {
+  display: inline-block;
+  color: #599e43;
+}
+
+.p-policy1__box1 .table1 ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 ul {
+    padding-left: 5px;
+  }
+}
+
+.p-policy1__box1 .table1 ul li {
+  position: relative;
+  margin-bottom: 14px;
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 ul li {
+    padding-left: 12px;
+  }
+}
+
+.p-policy1__box1 .table1 ul li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background-color: #555;
+  border-radius: 50%;
+}
+
+.p-policy1__box1 .table1 tr {
+  width: 100%;
+  vertical-align: text-top;
+  word-break: break-word;
+}
+
+.p-policy1__box1 .table1 tr th > *:last-child, .p-policy1__box1 .table1 tr td > *:last-child {
+  margin-bottom: 0;
+}
+
+.p-policy1__box1 .table1 tr th > *:last-child > *, .p-policy1__box1 .table1 tr td > *:last-child > * {
+  margin-bottom: 0;
+}
+
+.p-policy1__box1 .table1 tr th {
+  width: 240px;
+  padding-right: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #599e43;
+}
+
+@media only screen and (min-width: 1200px) {
+  .p-policy1__box1 .table1 tr th {
+    padding-right: 36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 tr th {
+    width: 35%;
+    padding-left: 0;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+}
+
+.p-policy1__box1 .table1 tr td {
+  width: calc(100% - 240px);
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 tr td {
+    width: 65%;
+    padding-right: 0;
+  }
+}
+
+.p-policy1__box1 .table1 > tr:not(:first-child) th, .p-policy1__box1 .table1 > tr:not(:first-child) td,
+.p-policy1__box1 .table1 > tbody > tr:not(:first-child) th,
+.p-policy1__box1 .table1 > tbody > tr:not(:first-child) td {
+  padding-top: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 > tr:not(:first-child) th, .p-policy1__box1 .table1 > tr:not(:first-child) td,
+  .p-policy1__box1 .table1 > tbody > tr:not(:first-child) th,
+  .p-policy1__box1 .table1 > tbody > tr:not(:first-child) td {
+    padding-top: 20px;
+  }
+}
+
+.p-policy1__box1 .table1 > tr:not(:last-child),
+.p-policy1__box1 .table1 > tbody > tr:not(:last-child) {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.p-policy1__box1 .table1 > tr:not(:last-child) th, .p-policy1__box1 .table1 > tr:not(:last-child) td,
+.p-policy1__box1 .table1 > tbody > tr:not(:last-child) th,
+.p-policy1__box1 .table1 > tbody > tr:not(:last-child) td {
+  padding-bottom: 48px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-policy1__box1 .table1 > tr:not(:last-child) th, .p-policy1__box1 .table1 > tr:not(:last-child) td,
+  .p-policy1__box1 .table1 > tbody > tr:not(:last-child) th,
+  .p-policy1__box1 .table1 > tbody > tr:not(:last-child) td {
+    padding-bottom: 20px;
+  }
+}

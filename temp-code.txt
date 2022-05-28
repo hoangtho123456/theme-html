@@ -1,0 +1,192 @@
+echo get_lazy_img($img['url'],$img['name'],$img['sizes']['thumbnail']);
+<?php 
+$detect = new Mobile_Detect;
+if( $detect->isMobile() && !$detect->isTablet()){ ?>     
+<?php }else {?>
+<?php }?>
+
+<div>
+  <img
+    src="<?php echo esc_url(get_template_directory_uri());?>/block-thumbs/home-career.jpg"
+    alt="img" loading="lazy"/>
+    <?php //echo get_lazy_img(esc_url(get_template_directory_uri()).'/block-thumbs/home-career.jpg','img');?>
+</div>
+@media screen and (min-width:992px) and (max-width:1199px){
+  width: 25%;
+}
+@media screen and (min-width:768px) and (max-width:991px){
+
+}
+@media screen and (min-width:576px) and (max-width:767px){
+
+}
+@include respond-toSP(768) {}
+@include respond-toSP(1200) {}
+@include respond-to(767) {margin-bottom: 15px;}
+box-shadow: 0 8px 32px -1px rgba(0,0,0,0.08);
+box-shadow: 0 12px 50px -7px rgba(0,0,0,0.12);
+//triangle
+width: 0;
+height: 0;
+border-left: 13px solid transparent;
+border-right: 13px solid transparent;
+border-bottom: 13px solid $white;
+
+//link animation block about-phone
+https://f5-studio.com/
+
+<?php _e('Explore Jobs Opening','w2g');?>
+<?php _e('Search','w2g');?>
+<img src="<?php echo esc_url(get_template_directory_uri()).'/assets/images/test/img-2.png';?>" 
+  alt="img" loading="lazy"/>
+
+<img class="owl-lazy lazy-hidden" data-lazy-type="image"
+  src="<?php echo $img['sizes']['thumbnail'];?>" 
+  data-lazy-src="<?php echo $img['url'];?>" 
+  alt="<?php echo $img['name'];?>"/>
+
+if (!function_exists("get_lazy_img")) {
+  function get_lazy_img($src="", $alt="") {
+    $lazy_img = esc_url(get_template_directory_uri()).'/assets/images/blur.jpeg';
+    return
+      '<img class="lazy-hidden" 
+        src="'.$lazy_img.'" data-lazy-type="image" 
+        data-lazy-src="'.$src.'" alt="'.$alt.'"/>';
+  }
+}
+class="<?php echo (!is_admin()?'group-ef lazy-hidden':null)
+    ." ".esc_attr($className);?>"
+
+$img = get_field('img') ?: [
+    "url"=>esc_url(get_template_directory_uri()).'/assets/images/admin/home-banner.jpg',
+    "name" => "img",
+    'sizes'=> [
+      'thumbnail'=>esc_url(get_template_directory_uri()).'/assets/images/admin/home-banner.jpg'
+    ]];
+<?php if($note):?>
+  <p class="u-gotham box2_note1"><?php echo $note;?></p>
+  <?php endif;
+    if($title):?>
+  <h2 class="title1"><?php echo $title;?></h2>
+  <?php endif;
+    if($text):?>
+  <p class="text1"><?php echo $text;?></p>
+  <?php endif;?>
+<?php endif;
+  if($url):?>
+<a href=<?php echo esc_url($url);?> class="c-btn1">JOIN US</a>
+<?php endif;?>
+<?php echo get_lazy_img($img['url'],$img['name'],$img['sizes']['thumbnail']);?>
+<?php if(is_admin()):?>
+<?php if($img):?>
+<img src=<?php echo $img['url'];?> 
+  alt=<?php echo $img['name'];?> loading="lazy"/>
+
+<?php if($btn):?>
+<div class="text-center">
+  <a href=<?php echo is_admin()?"javascript:void(0);":
+    esc_url($btn['url']);?> 
+    target="<?php echo $btn['target'];?>" 
+    class="c-btn1">
+    <?php echo $btn['title'];?>
+  </a>
+</div>
+<?php endif;?>
+
+<link rel='stylesheet' id='font-awesome' href='<?php echo esc_url(get_template_directory_uri());?>/assets/fonts/fontawesome/css/custom.css' type='text/css' media='all' />
+
+<link rel="preload" href='<?php echo esc_url(get_template_directory_uri());?>/assets/fonts/gotham/ttf/svn-gotham-rounded-bold.ttf' 
+  as="font" type="font/ttf" crossorigin/>
+<link rel="preload" href='<?php echo esc_url(get_template_directory_uri());?>/assets/fonts/gotham/ttf/svn-gotham-rounded-medium.ttf' 
+  as="font" type="font/ttf" crossorigin/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+@include respond-to(767) {}
+
+<section class="content1">
+  <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus sit cras aliquam diam non at viverra. Porttitor scelerisque sed in tristique risus fringilla gravida dignissim tempor. Pellente id placerat dictum cras pellentesque enim convallis pulvinar. Ac quam sit sed justo pellentes egestas tellus. Morbi scelerisque tellus a molestie justo, nibh nulla. In egestas nulla pellentes consectetur fermentum et. Enim in quisque cras fermentum ut tincidunt. Ullamcorper cras cursus in posuere orci vitae sollicitudin. Leo elit quisque turpis faucibus egestas nunc.</b></p>
+  <p></p>
+  <p>Turpis proin ultrices eget hac felis fames adipiscing. Non molestie elementum nulla libero ege stas imperdiet sed. Eu tincidunt integer viverra et diam. Dignissim rhoncus nisl gravida eleme ntum malesuada nunc, felis. Cursus leo, tincidunt id bibendum purus faucibus mattis facilisis dictum. Ullamcorper proin eleifend potenti netus. Morbi eget phasellus nisl pharetra, mauris. Sagittis nulla cursus est lobortis velit vel ac duis non. Id ultricies venenatis enim eleife. Adipisci ut semper accumsan vitae tortor pellentesque. Diam tincidunt sapien leo vestibulu ornare gr. Curabitur at velit aliquet urna, tincidunt volutpat, habitasse erat ut. Egestas sollicitudin nunc vestibulum gravida magna lacus sed.</p>
+  <p class="text-center">
+    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/test/post-2.jpg" alt="img"/>
+  </p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus sit cras aliquam diam non at viverra. Porttitor scelerisque sed in tristique risus fringilla gravida dignissim tempor. Pellentesq id placerat dictum cras pellentesque enim convallis pulvinar. Ac quam sit sed justo pellentesq egestas tellus. Morbi scelerisque tellus a molestie justo, nibh nulla. In egestas nulla pellentesq consectetur fermentum et. Enim in quisque cras fermentum ut tincidunt. Ullamcorper cras cur in posuere orci vitae sollicitudin.</p>
+  <p>Turpis proin ultrices eget hac felis fames adipiscing. Non molestie elementum nulla libero ege imperdiet sed. Eu tincidunt integer viverra et diam. Dignissim rhoncus nisl gravida elementum malesuada nunc, felis. Cursus leo, tincidunt id bibendum purus faucibus mattis facilisis dictu. Ullamcorper proin eleifend potenti netus. Morbi eget phasellus nisl pharetra, mauris. Sagittis nulla cursus est lobortis velit vel ac duis non. Id ultricies venenatis enim eleife. Adipiscing ut semper accumsan vitae tortor pellentesque. Diam tincidunt sapien leo vestibulu ornare gravi. Curabitur at velit aliquet urna, tincidunt volutpat, habitasse erat ut. Egestas sollicitudin nunc vestibulum gravida magna lacus sed.</p>
+  <p>Neque habitant commodo ullamcorper felis porttitor dictumst amet, laoreet. Dictum element volutpat in nunc faucibus consequat interdum. Lectus elementum viverra tortor vulputate ac mattis ac ornare. Massa placerat felis aliquam adipiscing et.</p>
+</section>
+              
+<header id="header" class="sticky" role="banner">
+			<div class="container">
+				<a href="#" id="logo">
+					<img src="assets/images/logo-test.png" alt="logo"
+						class="u-transition1" width="237" height="40">
+				</a>
+
+				<div class="wrap-menu-header mobile">
+					<ul id="menu-main-menu" class="menu-top-header">
+						<li class="children current-menu-item page_item current_page_item menu-item-has-children">
+							<!-- <span class="showsubmenu icon-2 ib"></span><a href="" aria-current="page">Trang
+								Chủ</a> -->
+							<a href="#" aria-current="page">Trang Chủ</a>
+							<div class="wrapul">
+								<ul class="sub-menu">
+									<li class="children menu-item menu-item-type-taxonomy menu-item-has-children">
+										<span class="showsubmenu icon-2 ib"></span>
+										<a href="#">Chưa phân loại</a>
+										<div class="wrapul">
+											<ul class="sub-menu">
+												<li class="menu-item menu-item-type-custom menu-item-object-custom">
+													<a href="#">test-1</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="#">Về chúng tôi</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="#">Sản phẩm</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom children">
+							<a href="#">Tin tức</a>
+							<div class="wrapul">
+								<ul class="sub-menu">
+									<li class="menu-item menu-item-type-taxonomy menu-item-has-children">
+										<!-- <span class="showsubmenu icon-2 ib"></span> -->
+										<a href="post.html">POST-1</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="#">Hỗ trợ</a></li>
+						<li class="menu-item menu-item-type-custom menu-item-object-custom">
+							<a href="#">Liên hệ</a></li>
+
+						<li class="menu-item-lang children">
+							<a href="javascript:void(0);">
+								<img class="icon-lang"
+									src="assets/images/svg/global-green.svg" alt="Vn">Vn<i class="icon-down"></i>
+							</a>
+							<div class="wrapul">
+								<ul class="sub-menu">
+									<li class="lang-vi active"><a href="#" hreflang="vi" title="Vn">Vn</a></li>
+									<li class="lang-en"><a href="#" hreflang="en" title="En">En</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="group-header">
+					<div class="item imenu">
+						<span class="menu-btn x"><span></span></span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+

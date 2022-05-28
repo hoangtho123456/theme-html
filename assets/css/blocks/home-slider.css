@@ -1,0 +1,30 @@
+.p-home1__slider1 {
+  position: initial;
+}
+
+.p-home1__slider1 .splide_link1 {
+  display: block;
+  height: 100%;
+}
+
+.p-home1__slider1 .splide_link1:hover {
+  opacity: 0.8;
+}
+
+.p-home1__slider1 .splide_link1 .c-img1 {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+  .p-home1__slider1 .splide_link1 .c-img1 img {
+    min-height: 80vh;
+  }
+}
+
+.p-home1__slider1 .splide__pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}

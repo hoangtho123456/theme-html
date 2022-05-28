@@ -1,0 +1,57 @@
+@import "../vars";
+@import "../functions";
+
+//will change to mobie first and optimize later
+.p-home1__intro1 {
+  position: relative;
+  background: url(../../images/bg/paper-texture.jpg) no-repeat top left;
+  background-size: cover;
+	@include respond-toSP(1200) {min-height: 632px;}
+	.bg1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 606px;
+		height: 502px;
+		object-fit: contain;
+		object-position: right bottom;
+		vertical-align: top;
+		@media screen and (min-width:992px) and (max-width:1199px){
+			width: 503px;
+			height: 402px;
+		}
+		@media screen and (min-width:768px) and (max-width:991px){
+			width: 403px;
+			height: 302px;
+		}
+		@include respond-to(767) {
+			position: initial;
+			display: block;
+			width: 100%;
+			max-width: 340px;
+			height: 202px;
+			margin-left: auto;
+		}
+	}
+  .box1 {
+		padding-top: 108px;
+		padding-bottom: 30px;
+		@media screen and (min-width:768px) and (max-width:1199px){
+			padding-bottom: 105px;
+		}
+		@include respond-to(767) {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+		&_content1 {
+			max-width: 546px;
+			@media screen and (min-width:992px) and (max-width:1199px){
+				max-width: 446px;
+			}
+			@media screen and (min-width:768px) and (max-width:991px){
+				max-width: 400px;
+			}
+			h1 {font-weight: 900;}
+		}
+  }
+}

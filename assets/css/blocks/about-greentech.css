@@ -1,0 +1,200 @@
+.p-about1__greentech {
+  position: initial;
+}
+
+.p-about1__greentech .mb1 {
+  margin-bottom: 36px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech .mb1 {
+    margin-bottom: 20px;
+  }
+}
+
+.p-about1__greentech .mb2 {
+  margin-bottom: 8px;
+}
+
+.p-about1__greentech__box1 {
+  padding: 40px 0;
+  background-color: #599e43;
+}
+
+.p-about1__greentech__box1 .box1 {
+  display: table;
+}
+
+@media only screen and (max-width: 575px) {
+  .p-about1__greentech__box1 .box1 {
+    display: block;
+  }
+}
+
+.p-about1__greentech__box1 .box1_img1 {
+  position: initial;
+  width: 70px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box1 .box1_img1 {
+    width: 80px;
+  }
+}
+
+.p-about1__greentech__box1 .box1_img1 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.p-about1__greentech__box1 .box1_art1 {
+  display: table-cell;
+  padding-left: 32px;
+  vertical-align: top;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box1 .box1_art1 {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .p-about1__greentech__box1 .box1_art1 {
+    padding-top: 20px;
+  }
+}
+
+.p-about1__greentech__box2 {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p-about1__greentech__box2:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, #000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.p-about1__greentech__box2 .gray1 {
+  color: #555;
+}
+
+.p-about1__greentech__box2 .black1 {
+  color: #000;
+}
+
+.p-about1__greentech__box2 .ul1 {
+  font-weight: bold;
+  list-style: none;
+}
+
+.p-about1__greentech__box2 .ul1 li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.p-about1__greentech__box2 .ul1 li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.p-about1__greentech__box2 .ul1 li:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #599e43;
+}
+
+.p-about1__greentech__box2 .art1 {
+  position: relative;
+  max-width: 690px;
+  padding: 64px 32px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box2 .art1 {
+    max-width: 450px;
+    padding: 30px 20px;
+  }
+}
+
+.p-about1__greentech__box2 .art1:after {
+  content: '';
+  position: absolute;
+  right: -24px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 24px solid rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box2 .art1:after {
+    right: 0;
+    left: 0;
+    top: unset;
+    bottom: -18px;
+    margin: auto;
+    border: none;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.p-about1__greentech__box2 .art1_title1 {
+  text-transform: uppercase;
+}
+
+.p-about1__greentech__box2 .art1_box1 {
+  max-width: 486px;
+  margin: 0 auto;
+}
+
+.p-about1__greentech__box2 .box1 {
+  padding: 120px 0 119px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-about1__greentech__box2 .box1 {
+    padding: 40px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .p-about1__greentech__box2 .box1 .art1 {
+    max-width: 490px;
+    padding: 34px 22px;
+  }
+}

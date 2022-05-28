@@ -1,0 +1,70 @@
+.p-store1 {
+  position: initial;
+}
+
+.p-store1 .btn1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 104px;
+  padding: 10px 20px;
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 6px;
+  background: url(../../images/bg/bg-btn.jpg) no-repeat top left;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-store1 .btn1 {
+    height: auto;
+    min-height: 80px;
+  }
+}
+
+.p-store1 .btn1:hover {
+  color: #fff;
+  -webkit-box-shadow: 0 14px 40px -19px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 14px 40px -19px rgba(0, 0, 0, 0.32);
+}
+
+.p-store1 .btns1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-store1 .btns1 {
+    display: block;
+    margin-top: 40px;
+  }
+}
+
+.p-store1 .btns1 .btn1 {
+  width: 48%;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-store1 .btns1 .btn1 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .p-store1 .btns1 .btn1:last-child {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,104 @@
+@import "../vars";
+@import "../functions";
+
+.p-policy1 {
+	position: initial;
+	&__box1 {
+		position: initial;
+		.table1 {
+			width: 100%;
+			border-spacing: 0;
+			border-collapse: collapse;
+			text-align: left;
+			// color: $gray-2;
+			// b,strong{color: $black;}
+			p{margin-bottom: 15px;}
+			a{
+				display: inline-block;
+				color: $green;
+			}
+			ul {
+				list-style: none;
+				padding-left: 15px;
+				@include respond-to(767) {padding-left: 5px;}
+				li{
+					position: relative;
+					margin-bottom: 14px;
+					padding-left: 15px;
+					@include respond-to(767) {padding-left: 12px;}
+					&:before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 10px;
+						width: 4px;
+						height: 4px;
+						background-color: #555;
+						border-radius: 50%;
+					}
+					// &:not(:last-child){margin-bottom: 10px;}
+				}
+			}
+			tr {
+				width: 100%;
+				vertical-align: text-top;
+				// background-color: $gray-4;
+				// border-right: 1px solid $gray-3;
+				// border-bottom: 1px solid $gray-3;
+				// background-color: rgba(248, 248, 248, 1);
+				word-break: break-word;
+				th,td {
+					&>*:last-child{
+						margin-bottom: 0;
+						&>*{margin-bottom: 0;}
+					}
+				}
+				th {
+					width: 240px;
+					// padding-left: 16px;
+					padding-right: 16px;
+					// padding: 16px 16px 16px 0;
+					// padding-right: 16px;
+					// font-size: 20px;
+					font-weight: bold;
+					font-size: 24px;
+					color: $green;
+					@include respond-toSP(1200){padding-right: 36px;}
+					@include respond-to(767) {
+						width: 35%;
+						padding-left: 0;
+						padding-right: 10px;
+						font-size: 16px;
+					}
+				}
+				td {
+					width: calc(100% - 240px);
+					padding-right: 16px;
+					@include respond-to(767) {
+						width: 65%;
+						padding-right: 0;
+					}
+					// padding: 16px 20px 16px 0;
+					// border-left: 1px solid $gray-3;
+					// @include respond-to(767) {padding: 14px 10px 14px;}
+				}
+			}
+			&>tr,
+			&>tbody>tr {
+				&:not(:first-child){
+					th,td {
+						padding-top: 48px;
+						@include respond-to(767) {padding-top: 20px;}
+					}
+				}
+				&:not(:last-child) {
+					border-bottom: 1px solid $gray;
+					th,td {
+						padding-bottom: 48px;
+						@include respond-to(767) {padding-bottom: 20px;}
+					}
+				}
+			}
+		}
+	}
+}
