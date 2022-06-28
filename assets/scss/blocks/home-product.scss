@@ -119,18 +119,21 @@
 	.box1 {
 		margin-bottom: 42px;
 		padding: 40px 0 32px;
-		background: $green;
+		// background: $green;
+		background: rgb(200, 135, 30);
 		@include respond-to(767) {
 			margin-bottom: 28px;
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
 		&>.container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			@include respond-to(767) {
-				flex-wrap: wrap;
+			@include respond-toSP(576) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			@media screen and (max-width: 767px) and (min-width:576px) {
+				flex-wrap: wrap;			
 			}
 		}
 		&_title1 {
@@ -138,6 +141,9 @@
 			margin-bottom: 0;
 			margin-right: 20px;
 			@include respond-to(767) {margin-bottom: 20px;}
+		}
+		&_col1 {
+			flex:1
 		}
 	}
 }

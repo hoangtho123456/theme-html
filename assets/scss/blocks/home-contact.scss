@@ -4,6 +4,8 @@
 .p-home1__contact {
 	position: relative;
 	padding: 100px 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
 	@include respond-to(767) {
 		padding: 50px 20px 176px;
 	}

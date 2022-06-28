@@ -89,7 +89,7 @@
   line-height: 28px;
   font-size: 12px;
   border: none;
-  background: #599e43;
+  background: #cc7a2d;
   // @include respond-to(767) {
   //   height: 40px;
   //   padding: 9px 22px;
@@ -662,7 +662,8 @@
   &__box1 {
     position: initial;
     padding: 40px 0 40px;
-    background-color: $green;
+    // background-color: $green;
+    background-color: #819558;
     color: $white;
   }
 }

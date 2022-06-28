@@ -128,7 +128,7 @@
     }
     &[class*=current] {
       color: white;
-      background-color: #599e43;
+      background-color: #e68f0c;
       @media only screen and (max-width:1199px) {color: white;}
       &>a {
         color: white;
@@ -174,7 +174,7 @@
         height: 0;
         margin: 0 auto;
         border-radius: 4px;
-        background-color: #245F12;
+        background-color: #e68f0c;
         @include respond-to(1199) {display: none;}
       }
     }

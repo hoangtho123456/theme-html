@@ -1,6 +1,8 @@
 .p-home1__contact {
   position: relative;
   padding: 100px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 767px) {

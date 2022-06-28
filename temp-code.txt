@@ -190,3 +190,21 @@ $img = get_field('img') ?: [
 		</header>
 
 
+<img 
+						class="lazy-hidden bg1"
+						data-lazy-type="image"
+						data-lazy-src="assets/images/items/app.png"
+						src="assets/images/items/app-blur.png" alt="img"
+						width="357"
+						height="500"
+					/>
+
+<img 
+						class="lazy-hidden bg1"
+						data-lazy-type="image"
+						data-lazy-src="assets/images/items/plant-growing.png"
+						src="assets/images/items/blur-2.png" alt="img"
+						width="840"
+						height="500"
+					/>
+					

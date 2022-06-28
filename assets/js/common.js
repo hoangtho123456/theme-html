@@ -14,9 +14,12 @@ jQuery(document).ready(function($) {
         arrows: false,
         type:"loop",
         pagination: true,
-        lazyLoad: 'sequential',
+        // lazyLoad: false,
+        lazyLoad: 'nearby',
+        height: '80vh',
+        // cover   : true,
         speed: 1000,
-        autoplay:true,
+        // autoplay:true,
       }).mount();
     }
   }

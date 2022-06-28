@@ -146,7 +146,7 @@
 
 .menu-top-header > li[class*=current] {
   color: white;
-  background-color: #599e43;
+  background-color: #e68f0c;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -211,7 +211,7 @@
   height: 0;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: #245F12;
+  background-color: #e68f0c;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -1153,7 +1153,7 @@ body.showModal {
   line-height: 28px;
   font-size: 12px;
   border: none;
-  background: #599e43;
+  background: #cc7a2d;
 }
 
 .c-btn2--big1 {
@@ -1961,6 +1961,6 @@ body.showModal {
 .c-footer__box1 {
   position: initial;
   padding: 40px 0 40px;
-  background-color: #599e43;
+  background-color: #819558;
   color: #fff;
 }
