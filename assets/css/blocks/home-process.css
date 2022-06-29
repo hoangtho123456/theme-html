@@ -192,8 +192,10 @@
 }
 
 .p-home1__process .list1 .card1_img1 img {
-  width: auto;
-  height: auto;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-home1__process .list1 .card1--mb1 {

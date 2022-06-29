@@ -110,8 +110,11 @@
 			&_img1 {
 				z-index: initial;
 				img {
-					width: auto;
-					height: auto;
+					// width: auto;
+					// height: auto;
+					width: 40px;
+					height: 40px;
+					object-fit: contain;
 				}
 			}
 			&--mb1 {

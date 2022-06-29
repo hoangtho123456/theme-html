@@ -1586,35 +1586,41 @@ body.showModal {
   height: 98px;
 }
 
-.c-form1__info select {
+.c-form1__select1 {
+  position: relative;
+}
+
+.c-form1__select1 select {
   position: relative;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   z-index: 2;
+  background-color: unset;
 }
 
-.c-form1__info select + div {
+.c-form1__select1 select + div {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  height: 29px;
+  height: 45px;
   width: 100%;
   border-radius: 4px;
   z-index: 1;
+  background-color: white;
 }
 
-.c-form1__info select + div:after {
+.c-form1__select1 select + div:after {
   font-family: 'icomoon';
   content: '\e901';
   font-size: 10px;
   color: #A50064;
   position: absolute;
-  right: 2px;
+  right: 7px;
   bottom: 0;
-  height: 29px;
-  line-height: 29px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .c-form1__btn1 {

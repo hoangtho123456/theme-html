@@ -4,6 +4,8 @@ var $ = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
 var del = require('del');
 
+var wait = require('gulp-wait');
+
 var setting = {
   autoprefixer: {
       browser: ['last 2 version', 'Explorer >= 11', 'Android >= 4']
@@ -59,7 +61,7 @@ gulp.task('scss',function(){
   return gulp.src(setting.path.sass.src)
     .pipe($.plumber({
       errorHandler: $.notify.onError("Error: <%= error.message %>") //<-
-    }))
+    })).pipe(wait(200))
     .pipe($.sass({outputStyle: 'expanded'}))
     .pipe($.autoprefixer(setting.autoprefixer.browser))
     .pipe(gulp.dest(setting.path.sass.dest));
