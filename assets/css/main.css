@@ -674,13 +674,13 @@ select option {
   -webkit-transform: translate(0, 0) scale3d(1, 1, 1);
   transform: translate(0, 0) scale3d(1, 1, 1); }
 
-@media only screen and (max-width: 1199px) {
+/* @media only screen and (max-width: 1199px) {
   .group-ef-hover [class*="efch"] {
     opacity: 1;
     -webkit-transform: translate(0, 0) scale3d(1, 1, 1);
     transform: translate(0, 0) scale3d(1, 1, 1);
   }
-}
+} */
 
 /* pagination */
 .pagination {
