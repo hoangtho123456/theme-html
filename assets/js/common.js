@@ -201,12 +201,55 @@ jQuery(document).ready(function($) {
         $that.find('.tabs-js .tab-js').addClass('hidden');
 
         //store tab's id of a link that was clicked
-        var selectTab = $(this).attr("data-tab");
+        var selectedTab = $(this).attr("data-tab");
 
         //show tab corresponding which the link's href that is clicked 
         // $('.' + selectTab).fadeIn();
-        $('.' + selectTab).addClass('active');
-        $('.' + selectTab).removeClass('hidden');
+        $('.' + selectedTab).addClass('active');
+        $('.' + selectedTab).removeClass('hidden');
+      });
+    });
+  }
+
+  if($(".p-list-toggle-js").length > 0) {
+    $('.p-list-toggle-js').each(function(index, element) {
+      let $that = $(this);
+      
+      //init list toggle
+      //add class [current-js] to check if current card is prev card, if true, no event occur^^
+      $that.find('.card-js .content-js').hide();
+      $that.find('.card-js').removeClass('current-js');
+
+      $that.find('.card-js:first .content-js').show();
+      $that.find('.card-js:first>.icon-js').addClass('up');
+      $that.find('.card-js:first').addClass('current-js');
+
+      $that.find('.card-js').click(function(event) {
+        event.preventDefault();
+
+        if(!$(this).hasClass('current-js')) {
+          $that.find('.card-js .content-js').slideUp();
+          $that.find('.card-js>.icon-js').removeClass('up');
+          $that.find('.card-js').removeClass('current-js');
+  
+          $(this).find('.content-js').first().slideDown();
+          $(this).addClass('current-js');
+          $(this).children('.icon-js').addClass('up');
+        }
+
+        // $that.find('.btns-js .btn-js').removeClass('active');
+        // $(this).addClass('active');
+        // // $that.find('.tabs-js .tab-js').hide();
+        // $that.find('.tabs-js .tab-js').removeClass('active');
+        // $that.find('.tabs-js .tab-js').addClass('hidden');
+
+        // //store tab's id of a link that was clicked
+        // var selectTab = $(this).attr("data-tab");
+
+        // //show tab corresponding which the link's href that is clicked 
+        // // $('.' + selectTab).fadeIn();
+        // $('.' + selectTab).addClass('active');
+        // $('.' + selectTab).removeClass('hidden');
       });
     });
   }

@@ -673,6 +673,25 @@
     background-color: #819558;
     color: $white;
   }
+  &__box2 {
+		padding: 80px 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: $white;
+		@include respond-to(767) {
+			padding-top: 60px;
+			padding-bottom: 60px;
+		}
+		.title1 {
+			margin-bottom: 10px;
+			color: $white;
+		}
+		.box1 {
+			max-width: 600px;
+			margin: 0 auto;
+			padding: 0 15px;
+		}
+	}
 }
 
 // .c-footer__box1 .info1_url1 {

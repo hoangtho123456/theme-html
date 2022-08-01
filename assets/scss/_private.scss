@@ -29,3 +29,134 @@
 // 		}
 // 	}
 // }
+.p-block1 {
+	background-color: $gray-1;
+  .row1 {
+		z-index: initial;
+		.row1-mr1 {margin-right: 3px;}
+		.c-title1 {
+			margin-bottom: 12px;
+		}
+		// @include respond-to(575) {
+		//   max-width: 400px;
+		//   margin: auto;
+		// }
+		&__icon1 {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		&__dl1 {
+			margin-bottom: 19px;
+			color: $gray-1;
+			font-size: 12px;
+			@include respond-to(767) {margin-bottom: 12px;}
+			dd {
+				display: inline-block;
+				&:not(:last-child):after{
+					content: '|';
+					display: inline-block;
+					margin: 0 5px;
+				}
+			}
+			&--type1 {
+				dd {display: inline;}
+			}
+		}
+		&__card1 {
+			position: relative;
+			padding: 32px 32px;
+			background-color: $white;
+			border-radius: 8px;
+			height: 100%;
+			cursor: pointer;
+			@include respond-to(767) {padding: 25px 15px;}
+			.row1__item1 {  
+				opacity: 0;
+				visibility: hidden;
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+				background-color: rgba(17, 17, 17, 0.42);
+				transition: all ease 0.4s;
+			}
+			&:hover {
+				.row1__item1 {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+			.c-btn1 {min-width: 136px;}
+		}
+		[class*=col-] {
+			margin-bottom: 20px;
+			@include respond-to(767) {margin-bottom: 15px;}
+		}
+		&--splide1 {
+			.splide__pagination {
+				margin: 10px 0 10px;
+			}
+			.splide__slide {
+				margin-bottom: 20px;
+				@include respond-to(767){
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.p-block2 {
+	.list1 {
+		.card1 {
+			position: relative;
+			display: flex;
+			cursor: pointer;
+			.icon {
+				position: absolute;
+				right: 10px;
+				top: 20px;
+				font-size: 16px;
+				@include respond-to(767) {top:7px;}
+				&.up {
+					transform: rotate(180deg);
+				}
+			}
+			.c-title1 {
+				margin-bottom: 13px;
+			}
+			&_number1 {
+				font-size: 40px;
+				font-weight: 900;
+				color: blue;
+				line-height: 1.2;
+				@include respond-to(767) {font-size: 24px;}
+			}
+			&_texts1 {z-index: initial;}
+			&_col1 {
+				flex: 1;
+				padding-top: 16px;
+				padding-left: 43px;
+				padding-right: 38px;
+				@include respond-to(767) {
+					padding-top: 5px;
+					padding-left: 20px;
+				}
+			}
+		}
+		&>.card1 {
+			margin-bottom: 16px;
+			&:not(:last-child) {
+				// margin-bottom: 16px;
+				padding-bottom: 16px;
+				border-bottom: 1px solid $gray;
+			}
+		}
+	}
+}
